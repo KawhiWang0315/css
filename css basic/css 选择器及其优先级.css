@@ -1,0 +1,59 @@
+/*
+  1- css选择器有哪些？
+
+    1.1- id选择器    #[idName]
+
+    1.2- 类选择器    .[className]
+
+    1.3- 属性选择器  [tagName][keyName = 'keyValue'] | eg: a[ref = 'isMarked']
+
+    1.4- 伪类选择器  [tagName] : [伪类选择器name] ｜ eg: li:last-child
+        有哪些【伪类选择器】呢？ 参考文档：https://c.biancheng.net/css3/pseudo-class.html
+
+    1.5- 标签选择器  [tagName]｜ eg：div
+
+    1.6- 伪元素选择器 [tagName] :: [伪元素选择器name] ｜ eg: li::after
+        有哪些【伪元素选择器】呢？ 参考文档：https://c.biancheng.net/css3/pseudo-element.html
+
+    1.7- 相邻兄弟选择器   [brotherTagName1] + [brotherTagName1] | eg: h1+p
+
+    1.8- 子选择器    [fatherTagName]>[sonTagName] | eg: ul>li
+
+    1.9- 后代选择器    [fatherTagName] [sonTagName] | eg: li a
+
+    1.10- 通配符选择器    *
+
+
+  *************************************8
+
+  2- css选择器优先级
+
+    1- 带有 !important 声明的样式 ------------- 10000
+    2- 内联样式 --------------------------- 1000
+    3- id选择器 ------------------------- 100
+    4- 类选择器、伪类选择器、属性选择器 ---- 10
+        note：谁在后谁的样式优先级高
+    5- 标签选择器、伪元素选择器 ---------1
+
+  *************************************
+  补充知识点：css的三种样式： 内联式，嵌入式，外部式
+
+    a：内联式： <p style="color:red";font-size:12px>这里文字是红色。</p>
+    b：嵌入式：
+        <head>
+          <style type="text/css">
+            span{
+              color:red;
+            }
+          </style>
+        </head>
+    c：外部式：<link href="base.css" rel="stylesheet" type="/ out css path" />
+
+  优先级：内联式 > 嵌入式 > 外部式
+        note：嵌入式> 外部式有一个前提 =》 嵌入式css样式的位置一定在外部式的后面
+
+  3- 其他样式来源优先级
+    1- 继承得来的样式优先级最低
+    2- 内联样式 > 嵌入式 > 外部式 > 浏览器用户自定义样式 > 浏览器默认样式
+
+ */
