@@ -1,0 +1,22 @@
+.virtual{
+  height: 150px;
+  background-color: #f5f5;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 150px;
+}
+.element::before {
+  content: '我是 beforeContent ';
+  color: #fff;
+  font-weight: bold;
+}
+.element::after {
+  content: '我是 afterContent ';
+  color: orangered;
+  font-weight: bold;
+}
+.type:hover{
+  color: #fff;
+  background-color: #000;
+}

@@ -1,0 +1,43 @@
+.animationContainer {
+  margin-bottom: 30px;
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+  background: #92B901;
+  position: absolute;
+  left: 0;
+  /* 用来开启 chrome GPU 加速，解决动画”卡顿” */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  animation: move_animation_for_transform 5s linear 0s infinite alternate;
+}
+
+.setTimeout {
+  margin-bottom: 30px;
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+  background: #92B901;
+  position: absolute;
+  top: 200px;
+}
+.requestAnimationFrameKey{
+  margin-bottom: 30px;
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+  background: #92B901;
+  position: absolute;
+  top: 320px;
+}
+@keyframes move_animation_for_transform {
+  /* 在动画中使用 transform 比 left/top 性能更好，能减少浏览器 repaint */
+  0% { transform: translateX(0); }
+  50% { transform: translateX(250px); }
+  100% { transform: translateX(500px); }
+}
+
+@keyframes move_animation_left {
+  0% { left: 0px; }
+  100% { left: calc(100% - 60px); }
+}

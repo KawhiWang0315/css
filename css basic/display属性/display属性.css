@@ -1,0 +1,7 @@
+/* 像块类元素一样显示，并添加样式列表标记 */
+.listBlock{
+  display: list-item;
+}
+.table{
+  display: table;
+}

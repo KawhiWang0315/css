@@ -1,0 +1,58 @@
+* {
+  margin : 0;
+  padding: 0;
+}
+
+h1 {
+  color: rebeccapurple;
+}
+
+.container {
+  padding-left    : 35%;
+  position        : relative;
+  background-color: orange;
+}
+
+.displayNone {
+  display: none;
+  height : 40px;
+}
+
+.visibilityHidden {
+  visibility: hidden;
+  height    : 40px;
+}
+
+.opacity0 {
+  opacity: 0;
+  height : 40px;
+}
+
+.positionAbsolute {
+  position: absolute;
+  left    : -1000px;
+  height  : 40px;
+}
+
+.shadowDiv {
+  height          : 30px;
+  position        : absolute;
+  width           : 100%;
+  background-color: white;
+}
+
+.zIndex {
+  z-index: -1;
+  height : 40px;
+  line-height: 60px;
+}
+
+.clipPath {
+  clip-path: circle(0);
+  height   : 40px;
+}
+
+.transformScale{
+  transform: scale(0);
+  height : 40px;
+}

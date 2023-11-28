@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐藏元素的方法</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>display:none</h1>
+    <div class="displayNone">
+      1- 渲染树不会包含该渲染元素
+      2- 元素不会在页面中占据位置
+      3- 不会触发绑定事件
+    </div>
+
+    <h1>visibility: hidden</h1>
+    <div class="visibilityHidden">
+      1- 元素在页面中仍占据空间
+      2- 不会触发绑定事件
+    </div>
+
+    <h1>opacity: 0</h1>
+    <div class="opacity0">
+      1- 元素在页面中仍占据空间
+      2- 能够触发绑定事件
+    </div>
+
+    <h1>position: absolute</h1>
+    <div class="positionAbsolute">
+      1- 通过将元素移出可视区来实现
+    </div>
+
+    <h1>z-index: -1</h1>
+    <div class="shadowDiv">
+      我是遮挡div
+    </div>
+    <div class="zIndex">
+      1- 通过其他元素盖住该元素
+    </div>
+
+    <h1>clip-path: circle(0);</h1>
+    <div class="clipPath">
+      1- 使用元素裁剪的方法来实现元素隐藏
+      2- 元素仍然在页面中占据位置
+      3- 会触发绑定事件
+    </div>
+
+    <h1>transform: scale(0)</h1>
+    <div class="transformScale">
+      1- 将元素缩放为0
+      2- 元素仍然在页面中占据位置
+      3- 会触发绑定事件
+    </div>
+  </div>
+
+</body>
+
+</html>
